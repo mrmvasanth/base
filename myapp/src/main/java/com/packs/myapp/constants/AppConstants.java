@@ -1,5 +1,5 @@
 package com.packs.myapp.constants;
 
 public interface AppConstants {
-    String SAMPLE_MESSAGE="Sample message";
+    String SAMPLE_MESSAGE="Sample messages";
 }
