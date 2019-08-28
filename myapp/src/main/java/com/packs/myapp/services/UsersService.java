@@ -33,7 +33,7 @@ public class UsersService {
             return new ApiResponse(404, "No user found");
     }
 
-    public ApiResponse deleteUser(Long userid) {
+    public ApiResponse deleteUserById(Long userid) {
         try {
             usersRepository.deleteById(userid);
             return new ApiResponse(200, "Deletion Success");
