@@ -35,6 +35,7 @@ public class UsersService {
 
     public ApiResponse deleteUserById(Long userid) {
         try {
+            System.out.println("Id to delete: "+userid);
             usersRepository.deleteById(userid);
             return new ApiResponse(200, "Deletion Success");
         } catch (EmptyResultDataAccessException e) {

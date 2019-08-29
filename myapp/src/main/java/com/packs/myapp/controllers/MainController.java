@@ -24,7 +24,7 @@ public class MainController {
     }
 
     @DeleteMapping("duser/{userid}")
-    public ApiResponse deleteUser(@PathVariable Long userid){
+    public ApiResponse deleteUserById(@PathVariable Long userid){
         return usersService.deleteUserById(userid);
     }
 
