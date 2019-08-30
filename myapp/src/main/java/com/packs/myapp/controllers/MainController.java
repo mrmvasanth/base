@@ -19,8 +19,13 @@ public class MainController {
     }
 
     @GetMapping("/guser/{userid}")
-    public ApiResponse getAllUsers(@PathVariable Long userid){
+    public ApiResponse getUser(@PathVariable Long userid){
         return usersService.getUser(userid);
+    }
+
+    @GetMapping("/guser/")
+    public ApiResponse getAllUsers(@PathVariable Long userid){
+        return usersService.getAllUser();
     }
 
     @DeleteMapping("duser/{userid}")

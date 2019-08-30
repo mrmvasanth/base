@@ -33,6 +33,11 @@ public class UsersService {
             return new ApiResponse(404, "No user found");
     }
 
+    public ApiResponse getAllUser() {
+         return new ApiResponse(200,"Need to return all users");
+        
+    }
+
     public ApiResponse deleteUserById(Long userid) {
         try {
             System.out.println("Id to delete: "+userid);
